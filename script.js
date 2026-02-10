@@ -4,7 +4,7 @@
 function selectOption(option) {
     // Check which option was clicked
     if (option === 'yes') {
-        // Flash rainbow colors
+        // Flash rainbow color
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
             displayCatHeart(); // Display the cat-heart.gif
@@ -37,7 +37,7 @@ function flashRainbowColors(callback) {
         if (callback) {
             callback();
         }
-    }, 2000); // Flash colors for 2 seconds
+    }, 10000); // Flash colors for 2 seconds
 }
 
 // Function to display the cat.gif initially
@@ -78,4 +78,5 @@ function displayCatHeart() {
 
 // Display the cat.gif initially
 displayCat();
+
 
